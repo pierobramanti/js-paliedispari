@@ -17,3 +17,6 @@ else {
 
 // DICHIARO UNA VARIABILE A CUI ASSEGNO VALORE PROMPT COME INPUT//
 let new_word = prompt("inserisci una parola per scoprire se è palindroma");
+
+// DICHIARO IL PARAMETRO DELLA FUNZIONE//
+palindrome(new_word);

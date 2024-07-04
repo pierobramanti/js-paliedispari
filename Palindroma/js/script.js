@@ -11,6 +11,9 @@ if (word===reverse_word){
 
 // INSERISCO ELSE
 else {
-    console.log(`la parola "${word}" non è plaindroma`)
+    console.log(`la parola "${word}" non è plaindroma`);
 }
 }
+
+// DICHIARO UNA VARIABILE A CUI ASSEGNO VALORE PROMPT COME INPUT//
+let new_word = prompt("inserisci una parola per scoprire se è palindroma");

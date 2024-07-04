@@ -11,7 +11,7 @@
 
 // INSERISCO ELSE
 //else {
-    //console.log(`la parola "${word}" non è plaindroma`);
+    //console.log(`la parola "${word}" non è plaindroma`); 
 //}
 //}
 

@@ -1,18 +1,37 @@
-// DICHIARO UNA VARIABILE A CUI ASSEGNO METODO PROMPT//
+// 1 Definisco la funzione GenerateRandonNumber//
+ 
+function generateRandonNumber(){
+    return Math.floor( Math.random()*5 );
+}
 
- let userChoice = prompt("Scrivi pari o dispari").toLowerCase();
+//2 Definisco la funzione checkEvenorOdd //
+function checkEvenOrOdd(){
+    if(sum % 2 ===0){
+        return `pari`
+    }
 
+    return `dispari`
+}
 
-// DICHIARO UNA SECONDA VARIABILE PER INSERIRE UN NUMERO//
- let userNumber = parseInt(prompt("Inserisci un numero da 1 a 5"));
+// 3 Dichiaro una variabile che conterrà il valore pari o dispari scelta dall'utente
 
- function pcNumber(){
-    return Math.floor(Math.random() * 5) + 1;
- }
+let even_or_odd = prompt(`inserisci la parola "pari" o "dispari"`);
 
- let pcChoice = pcNumber;
+let number = parseInt(prompt(`inserisci un avlore numerico tra "1" e "5"`));
 
- let sum = userNumber + userNumber;
- console.log(sum)
+// genero il numero per il computer richiamando la funzione GenerateRandomNumber
 
+let pc_number= generateRandonNumber();
+console.log(pc_number);
 
+let sum = number + pc_number;
+console.log(sum);
+
+let results= checkEvenOrOdd(sum);
+
+if(even_or_odd.toLowerCase()===results){
+    console.log(`hai vinto!`);
+}
+else{
+console.log(`hai perso!`);
+}
